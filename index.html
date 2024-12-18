@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-half">
+        <div class="bg">
+            <div class="logo">
+                <h1>ODIN</h1>
+            </div>
+            <div class="watermark">Photo by <a href="">Someone</a> on <a href="">Website</a></div>
+        </div>
+    </div>
+
+    <div class="right-half">
+        <div class="promotion">
+            <p class="promotion-text-1">
+            This is not a real online service!
+                You know you need something like this in your life
+                to help you realize your deepest dreams.
+            </p>
+            <p class="promotion-text-2">You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="sign-up">
+            <h1 id="form-heading">Let's do this!</h1>
+            <form id="sign-up-form" action="https://httpbin.org/post" method="post">
+                <div class="left-form">
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <br>
+                        <input type="text" id="first_name">
+                    </div>                    
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <br>
+                        <input type="text" id="email">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <br>
+                        <input type="text" id="password">
+                    </div>
+                </div>
+
+                <div class="right-form">
+                    <div>
+                        <label for="last_name">LAST NAME</label>
+                        <br>
+                        <input type="text" id="last_name">
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <br>
+                        <input type="text" id="phone">
+                    </div>
+                    <div>
+                        <label for="password">CONFIRM PASSWORD</label>
+                        <br>
+                        <input type="text" id="password">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="log-in">
+            <button type="submit" form="sign-up-form">Create Account</button>
+
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

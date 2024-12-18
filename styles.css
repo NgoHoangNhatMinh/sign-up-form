@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(Norse-Bold.otf);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+}
+
+.left-half {
+  width: 35%;
+  height: 100%;
+}
+
+.bg {
+  background-image: url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=600);
+  height: 100%;
+}
+
+.logo {
+  background-color: rgba(30,30,30,0.5);
+}
+
+.logo h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: "Norse Bold";
+}
+
+.watermark {
+  color: white;
+}
+
+.right-half {
+  width: 65%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.promotion,.sign-up,.log-in {
+  flex: 1;
+  padding: 20px 50px 20px 50px;
+}
+
+.promotion,.log-in {
+  background-color: rgba(200,200,200,0.5);
+}
+
+form {
+  display: flex;
+  gap: 30px;
+}
+
+.left-form,.right-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,button {
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 200px;
+  font-weight: bold;
+}
+
+.log-in a {
+  color:#596D48;
+  text-decoration: none;
+}
