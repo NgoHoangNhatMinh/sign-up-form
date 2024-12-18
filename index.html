@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="left-half">
         <div class="bg">
             <div class="logo">
+                <img src="odin-logo.png" alt="logo" width="80px">
                 <h1>ODIN</h1>
             </div>
-            <div class="watermark">Photo by <a href="">Someone</a> on <a href="">Website</a></div>
+            <div class="watermark">Photo by <a href="https://www.pexels.com/@eberhardgross/">Eberhard Grossgasteiger</a> on <a href="https://www.pexels.com/">Pexels</a></div>
         </div>
     </div>
 
@@ -33,17 +35,18 @@
                     <div>
                         <label for="first_name">FIRST NAME</label>
                         <br>
-                        <input type="text" id="first_name">
+                        <input type="text" id="first_name" name="first_name" required>
                     </div>                    
                     <div>
                         <label for="email">EMAIL</label>
                         <br>
-                        <input type="text" id="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div>
                         <label for="password">PASSWORD</label>
                         <br>
-                        <input type="text" id="password">
+                        <input type="password" id="password" name="password" required>
+                        <p class="error-message">* Passwords do not match</p>
                     </div>
                 </div>
 
@@ -51,17 +54,17 @@
                     <div>
                         <label for="last_name">LAST NAME</label>
                         <br>
-                        <input type="text" id="last_name">
+                        <input type="text" id="last_name" name="last_name" required>
                     </div>
                     <div>
                         <label for="phone">PHONE NUMBER</label>
                         <br>
-                        <input type="text" id="phone">
+                        <input type="text" id="phone" name="phone" pattern="^\d{10}$" required>
                     </div>
                     <div>
-                        <label for="password">CONFIRM PASSWORD</label>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
                         <br>
-                        <input type="text" id="password">
+                        <input type="password" id="confirm-password" name="confirm-password" required>
                     </div>
                 </div>
             </form>

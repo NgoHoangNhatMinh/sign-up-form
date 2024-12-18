@@ -21,10 +21,17 @@ body {
 .bg {
   background-image: url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=600);
   height: 100%;
+  position: relative;
 }
 
 .logo {
+  display: flex;
   background-color: rgba(30,30,30,0.5);
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo h1 {
@@ -32,9 +39,19 @@ body {
   text-align: center;
   color: white;
   font-family: "Norse Bold";
+  font-size: 80px;
 }
 
 .watermark {
+  color: white;
+  position: absolute;
+  bottom: 0rem;
+  background-color: rgba(30,30,30,0.5);
+  width: 100%;
+  text-align: center;
+}
+
+.watermark a {
   color: white;
 }
 
@@ -55,6 +72,11 @@ body {
   background-color: rgba(200,200,200,0.5);
 }
 
+.promotion {
+  font-weight: bold;
+  font-size: 24px;
+}
+
 form {
   display: flex;
   gap: 30px;
@@ -68,10 +90,23 @@ form {
 
 input,button {
   width: 200px;
+  height: 1.5rem;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1.5px solid #eee;
+  border-radius: 6px;
 }
+
+input:focus {
+  border: 1.5px solid #4471d3;
+  outline: 0px none white;
+}
+
+/* input:invalid:hover {
+  border: 1.5px solid red;
+  outline: 0px none white;
+} */
 
 button {
   background-color: #596D48;
@@ -83,7 +118,28 @@ button {
   font-weight: bold;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .log-in a {
   color:#596D48;
   text-decoration: none;
+}
+
+/* style controlled by javascript */
+
+input.invalid {
+  border: 1.5px solid red;
+  background-color: #ffe6e6;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.error-message.visible {
+  display: block;
 }
